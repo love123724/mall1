@@ -1,0 +1,59 @@
+<template>
+    <div class="info-account">
+        <div class="account-item">
+            <div class="number">
+                <span class="balance">0.00</span>元
+            </div>
+            <div class="account-info">我的余额</div>
+        </div>
+        <div class="account-item">
+            <div class="number">
+                <span class="balance">0</span>个
+            </div>
+            <div class="account-info">我的优惠</div>
+        </div>
+        <div class="account-item">
+            <div class="number">
+                <span class="balance">0</span>分
+            </div>
+            <div class="account-info">我的积分</div>
+        </div>
+    </div>
+</template>
+
+<script>
+    export default {
+        name: "UserInfo"
+    }
+</script>
+
+<style scoped>
+    .info-account {
+        display: flex;
+        padding: 8px 0 4px 0;
+    }
+
+    .account :last-child{
+        border-right: solid 1px #fff;
+    }
+
+    .account-item{
+        width: 100%;
+        background-color: #fff;
+        text-align: center;
+        font-size: 14px;
+        padding: 20px;
+        border-right: solid 1px #f2f2f2;
+        color: #666;
+    }
+
+    .account-item .balance {
+        font-size: 24px;
+        font-weight: 700;
+        color: #ff5f3e;
+    }
+
+    .account-info {
+        margin-top: 6px;
+    }
+</style>
